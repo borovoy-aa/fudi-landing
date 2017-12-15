@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+@import url('https://fonts.googleapis.com/css?family=Lato')
+
+*
+  box-sizing: border-box
+body
+  font-family: "Lato", sans-serif
+
+.button
+  padding-top: 20px
+  padding-bottom: 20px
+  padding-left: 75px
+  padding-right: 75px
+  background: none
+  border: 3px solid #fff
+  border-radius: 3px
+  cursor: pointer
+  outline: none
+  text-decoration: none
+  &--opacity
+    color: #ffffff
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: bold
+    margin-top: 15px
+    margin-bottom: 15px
+
+.header
+  position: relative
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  background-image: url(../images/header-bcg.jpg)
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+  height: 100vh
+  &__head
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    position: absolute
+    top: 0
+  .login-items
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    &__link
+      font-size: 14px
+      font-weight: bold
+      color: #ffffff
+      text-transform: uppercase
+      text-decoration: none
+      padding-right: 25px
+    &__menu
+      cursor: pointer
+      padding: 12px 0
+      
+      span
+        position: relative
+        display: block
+        width: 20px
+        height: 3px
+        background: #222
+        transition: all .2s ease-in-out
+        background-color: #ffffff
+        &:before, &:after
+          position: absolute
+          background: #222
+          content: ''
+          width: 20px
+          height: 3px
+          transition: all .2s ease-in-out
+          background-color: #ffffff
+        &:before
+          top: -6px
+        &:after
+          top: 6px
+      &.active span
+        background: transparent
+        &:before
+          transform: rotate(45deg) translate(4px, 7px)
+        &:after
+          transform: rotate(-45deg) translate(4px, -7px)
+  .header-content
+    text-align: center
+    color: #ffffff
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &__first-subtitle
+      font-size: 36px
+      font-style: italic
+      font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif
+      margin: 0
+    &__second-subtitle
+      font-size: 100px
+      font-family: "Lato", sans-serif
+      font-weight: bold
+      text-transform: uppercase
+      margin: 0
+    &__subscribe
+      font-size: 14px
+      text-transform: uppercase
+.subline
+  height: 1px
+  width: 88px
+  background-color: #f57365  
+.section-content
+  &__get-items
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    padding: 50px
+    .get-item
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      text-align: center
+      padding: 20px
+      &__image-block
+        width: 125px
+        height: 125px
+        border-radius: 125px
+        border: 2px solid #000000
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+      &__subtitle
+        font-size: 18px
+        font-weight: bold
+        text-transform: uppercase
+
+
+  .fudi-app
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    align-items: flex-start
+    background-color: #f7f7f7
+    padding-top: 100px
+    &__app-image
+      max-width: 100% 
+      height: auto 
+      display: block
+    &__introducing-app
+      max-width: 545px
+      margin-top: 100px
+    &__subtitle
+      font-size: 18px
+      font-weight: bold
+      text-transform: uppercase
+      margin: 0
+      margin-bottom: 5px
+    &__description
+      font-size: 16px
+      color: rgba(0, 0, 0, .6)
+    &__app-link
+      padding: 10px 10px 10px 0px
+
+.section-slider
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background-image: url(../images/slider-bcg.jpg)
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+  .owl-dots
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    .owl-dot
+      width: 10px
+      height: 10px
+      border-radius: 10px
+      background-color: rgba(255,255,255, .3)
+      margin: 5px
+    .active
+      background-color: #ffffff
+  .main-carousel
+    padding-top: 50px
+    padding-bottom: 50px
+    .owl-item
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      text-align: center
+    &__reviewer-photo
+      height: 115px
+      width: 115px
+      border-radius: 115px
+      border: 5px solid #948a94
+      overflow: hidden
+      margin-bottom: 20px
+
+    &__img-photo
+      width: auto !important
+      transform: translateX(-15px)
+
+    &__review
+      font-size: 30px
+      color: rgba(255,255,255, .3)
+      font-weight: lighter
+      margin: 0
+    &__reviewer-info
+      font-size: 18px
+      color: rgba(255,255,255, .3)
+      font-style: italic
+      margin-top: 25px
+      margin-bottom: 30px
+
+.section-some-cuisines
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  width: 100%
+  &__first-cuisines,
+  &__second-cuisines
+    flex-wrap: nowrap
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    display: flex
+    width: 100%
+    flex: 0 1 auto
+    img
+      width: 100%
+      height: auto 
+      display: block
+  &__image-wrapper
+    position: relative
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    display: flex
+  &__recipe-subscribe
+    position: absolute
+  &__some-recipes
+    font-size: 15px
+    font-style: italic
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif
+    font-weight: bold
+    color: #ffffff
+    margin: 0
+  &__recipe
+    font-size: 36px
+    color: #ffffff
+    font-weight: bold
+    margin: 0
+    text-transform: uppercase
+  
+  .numbers
+    flex-direction: row
+    justify-content: space-evenly
+    align-items: center
+    display: flex
+    width: 100%
+    padding-top: 50px
+    padding-bottom: 50px
+    
+    &__some-numb
+      font-size: 36px
+      text-transform: uppercase
+      margin: 0
+    &__subtitle
+      font-size: 16px
+      margin: 0
+      margin-top: 5px
+
+.footer
+  background-color: #f7f7f7
+  width: 100%
+  border-top: 1px solid #e2e2e2
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+  display: flex
+  padding-top: 20px
+  padding-bottom: 20px
+  &__rights
+    font-size: 14px
+    color: rgba(0,0,0, .3)
+  &__design-by
+    font-size: 14px
+    text-transform: uppercase
+    color: rgba(0,0,0, .3)
+    b
+      color: rgba(0,0,0, 1)
