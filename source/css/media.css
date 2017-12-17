@@ -2,9 +2,7 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-    .section-heading__background-mounts {
-        bottom: -50px;
-    }
+
 }
 
 @media only screen and (max-width : 1000px) {
@@ -13,77 +11,140 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-    
-    .section-fun-facts__facts-img {
-        max-width: 100%;
-        left: 0;
+    .section-some-cuisines__recipe {
+        font-size: 25px;
     }
-    .tech-wrap {
-        text-align: center !important;
-    }
-    .iphone-wrap {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+ 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-    .navbar-nav {
-        text-align: center;
+    .section-content__get-items {
+        flex-direction: column;
+        padding: 20px;
     }
-    .section-heading__background-mounts {
-        bottom: -20px;
+
+    .section-content .fudi-app__description {
+        font-size: 14px;
     }
-    .footer {
-        text-align: center;
+    .section-content .fudi-app {
+        align-items: flex-end;
     }
-    .footer .social-links {
-        float: none;
-        margin: 20px;
+    .section-content .fudi-app__introducing-app {
+        padding-bottom: 25px;
+    }
+    .section-some-cuisines__recipe {
+        font-size: 18px;
+    }
+    .section-some-cuisines__some-recipes {
+        font-size: 12px;
+    }
+    .section-some-cuisines .numbers__some-numb {
+        font-size: 20px;
+    }
+    .section-some-cuisines .numbers__subtitle {
+        font-size: 14px;
     }
 }
 
 @media only screen and (max-width : 577px) {
-    
-    .slider_nav .counter-wrap {
-        margin: -10px 3px 0px 3px;
+    .section-content__get-items {
+        padding: 10px;
     }
-    .slider_nav {
-        margin-left: 0;
+    .fudi-app__iphone-app {
+        display: none;
     }
-    .slider_nav .prev {
-        width: 100px;
+    .fudi-app__introducing-app {
+        padding: 30px;
     }
-    .slider_nav .prev::before {
-        width: 120px;
+    .section-content .fudi-app__introducing-app {
+        margin-top: 0;
     }
-    .slider_nav .next {
-        width: 100px;
+    .section-content .fudi-app {
+        padding-top: 20px;
     }
-    .slider_nav .next::before {
-        width: 120px;
+    .section-slider .main-carousel__review {
+        font-size: 16px;
     }
-
-    .slider_nav .prev span {
+    .section-slider .main-carousel__reviewer-info {
         font-size: 12px;
-        top: 4px;
-        left: 20px;
     }
-
-    .slider_nav .next span {
-        font-size: 12px;
-        top: 11px;
-        left: 0px;
-    }
-    
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
-    .section-blog-posts .blog-post {
-        height: 370px;
+
+    .header__head {
+        opacity: 0;
+        transition: .7s;
     }
+
+
+    .purpl-header {
+        background-color: rgba(88, 35, 73, 1);
+    }
+    .header__logotype {
+        visibility: hidden;
+    }
+    .login-items__link {
+        visibility: hidden;
+    }
+    .footer {
+        flex-direction: column;
+        padding: 0;
+    }
+    .footer__rights {
+        margin-bottom: 0;
+    }
+    .owl-item {
+        padding: 5px;
+    }
+    .section-some-cuisines .numbers {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .numbers__number-wrap {
+        padding: 10px;
+    }
+    .section-some-cuisines__cuisunes-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .section-some-cuisines {
+        flex-direction: column;
+    }
+    .section-some-cuisines__first-cuisines, .section-some-cuisines__second-cuisines {
+        flex-direction: column;
+    }
+    .section-some-cuisines__numbers {
+        flex-direction: column !important;
+    }
+    .header-content__responsive-logo {
+        margin-bottom: 70px;
+    }
+
+    .header .header-content__second-subtitle {
+        font-size: 50px;
+    }
+    .header .header-content__first-subtitle {
+        font-size: 18px;
+    }
+    .button--opacity {
+        font-size: 11px;
+    }
+    .button {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    .header .header-content__subscribe {
+        font-size: 9px;
+    }
+
     
 }
  
@@ -102,7 +163,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
+    .header-content__responsive-logo {
+        display: none;
+    }
 }
 
 @media only screen and (min-width : 576px) {

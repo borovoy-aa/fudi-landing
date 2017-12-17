@@ -24,7 +24,8 @@ body
     font-weight: bold
     margin-top: 15px
     margin-bottom: 15px
-
+.purpl-header
+  background-color: rgba(88, 35, 73, .7)
 .header
   position: relative
   display: flex
@@ -42,13 +43,15 @@ body
     flex-direction: row
     justify-content: space-around
     align-items: center
-    position: absolute
+    position: fixed
+    z-index: 9999
     top: 0
   .login-items
     display: flex
     flex-direction: row
     align-items: center
     justify-content: center
+    
     &__link
       font-size: 14px
       font-weight: bold
@@ -56,36 +59,99 @@ body
       text-transform: uppercase
       text-decoration: none
       padding-right: 25px
-    &__menu
+
+    .bar
+      transition: all .25s
+      content: ""
+      position: absolute
+      top: 40px
+      right: 50px
+      height: 4px
+      width: 30px
+      border-radius: 15px
+      background-color: rgba(255, 255, 255, 0.95)
+      &:before, &:after
+        transition: all .25s
+        content: ""
+        position: absolute
+        right: 0
+        height: 4px
+        width: 30px
+        border-radius: 15px
+        background-color: rgba(255, 255, 255, 0.95)
+    .bar
+      &:before
+        top: -8px
+      &:after
+        top: 8px
+
+    .menu-collapsed
+      transition: all .25s
+      position: fixed
+      top: 0
+      right: 0
+      height: 36px
+      width: 36px
+      z-index: 1
       cursor: pointer
-      padding: 12px 0
-      
-      span
-        position: relative
-        display: block
-        width: 20px
-        height: 3px
-        background: #222
-        transition: all .2s ease-in-out
-        background-color: #ffffff
+      ul
+        transition: all 0s
+        position: fixed
+        right: -9000px
+        padding: 0
+        padding-top: 50px
+
+    .menu-expanded
+      .bar
         &:before, &:after
-          position: absolute
-          background: #222
-          content: ''
-          width: 20px
-          height: 3px
-          transition: all .2s ease-in-out
-          background-color: #ffffff
+          transition: all .25s
+          top: -0px
+      transition: all .25s
+      text-align: center
+      line-height: 100px
+      height: 100%
+      width: 100%
+      border-radius: 0px
+      top: 0
+      right: 0
+      background-color: rgba(0, 0, 0, 0.85)
+      nav
+        height: 100%
+      ul
+        transition: all 0s
+        position: relative
+        right: 0
+        z-index: 2
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+      li
+        width: 100%
+        list-style-type: none
+      a
+        transition: all .15s
+        text-decoration: none
+        font-size: 2em
+        padding: 5px
+        color: #fff
+        display: block
+        &:hover
+          background-color: rgba(255, 255, 255, 0.8)
+          transition: all .15s
+          letter-spacing: 2px
+          color: #333
+          border: 1px solid rgba(255, 255, 255, 0.15)
+      .bar
+        background-color: transparent
+        transition: all .25s
         &:before
-          top: -6px
+          transform: rotate(45deg)
         &:after
-          top: 6px
-      &.active span
-        background: transparent
-        &:before
-          transform: rotate(45deg) translate(4px, 7px)
-        &:after
-          transform: rotate(-45deg) translate(4px, -7px)
+          transform: rotate(-45deg)
+
+
   .header-content
     text-align: center
     color: #ffffff
@@ -147,6 +213,9 @@ body
     align-items: flex-start
     background-color: #f7f7f7
     padding-top: 100px
+    position: relative
+    &__iphone-app
+      
     &__app-image
       max-width: 100% 
       height: auto 

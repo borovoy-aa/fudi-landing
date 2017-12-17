@@ -28,8 +28,9 @@ block content
         .get-item__subline.subline
         p.get-item__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ipsum illum recusandae esse id reprehenderit. Animi, accusantium laborum.
     
-    .section-content__fudi-app.fudi-app
-      img.fudi-app__app-image(src="../images/iphone-img.png", alt="App")
+    .section-content__fudi-app.fudi-app#fudi-app
+      .fudi-app__iphone-app
+        img.fudi-app__app-image(src="../images/iphone-img.png", alt="App")
       .fudi-app__introducing-app
         h3.fudi-app__subtitle INTRODUCING THE FUDI APP
         .fudi-app__subline.subline
@@ -41,7 +42,7 @@ block content
         a.fudi-app__app-link(href="#")
           img(src="../images/googlePlay.png", alt="googlePlay")
 
-  section.section-slider
+  section.section-slider#reviews
     .owl-carousel.owl-theme.main-carousel
       .owl-item
 
@@ -63,59 +64,60 @@ block content
         p.main-carousel__review “I am so happy because I found this recipe, and it just made my life easier. <br> Thanks  so much for sharing!”
         p.main-carousel__reviewer-info - Michael Dawson, San Francisco, CA -
 
-  section.section-some-cuisines
-    .section-some-cuisines__first-cuisines
-      .section-some-cuisines__image-wrapper
-        img(src="../images/cuisines/1.jpg", alt="Italian")
-        .section-some-cuisines__recipe-subscribe
-          p.section-some-cuisines__some-recipes 327 Recipes
-          h4.section-some-cuisines__recipe Italian
-      .section-some-cuisines__image-wrapper
-        img(src="../images/cuisines/2.jpg", alt="Indian")
-        .section-some-cuisines__recipe-subscribe
-          p.section-some-cuisines__some-recipes 856 Recipes
-          h4.section-some-cuisines__recipe Indian
-      .section-some-cuisines__image-wrapper
-        img(src="../images/cuisines/3.jpg", alt="French")
-        .section-some-cuisines__recipe-subscribe
-          p.section-some-cuisines__some-recipes 27 Recipes
-          h4.section-some-cuisines__recipe French"
-      .section-some-cuisines__image-wrapper
-        img(src="../images/cuisines/4.jpg", alt="Steakhouse")
-        .section-some-cuisines__recipe-subscribe
-          p.section-some-cuisines__some-recipes 174 Recipes
-          h4.section-some-cuisines__recipe Steakhouse
-      .section-some-cuisines__image-wrapper
-        img(src="../images/cuisines/5.jpg", alt="seafood")
-        .section-some-cuisines__recipe-subscribe
-          p.section-some-cuisines__some-recipes 131 Recipes
-          h4.section-some-cuisines__recipe seafood
-    .section-some-cuisines__second-cuisines
-      .section-some-cuisines__image-wrapper
-        img(src="../images/cuisines/6.jpg", alt="Sushi")
-        .section-some-cuisines__recipe-subscribe
-          p.section-some-cuisines__some-recipes 237 Recipes
-          h4.section-some-cuisines__recipe Sushi
-      .section-some-cuisines__image-wrapper
-        img(src="../images/cuisines/7.jpg", alt="Mexican")
-        .section-some-cuisines__recipe-subscribe
-          p.section-some-cuisines__some-recipes 529 Recipes
-          h4.section-some-cuisines__recipe Mexican
-      .section-some-cuisines__image-wrapper
-        img(src="../images/cuisines/8.jpg", alt="Chinese")
-        .section-some-cuisines__recipe-subscribe
-          p.section-some-cuisines__some-recipes 145 Recipes
-          h4.section-some-cuisines__recipe Chinese
-      .section-some-cuisines__image-wrapper
-        img(src="../images/cuisines/9.jpg", alt="Pizza")
-        .section-some-cuisines__recipe-subscribe
-          p.section-some-cuisines__some-recipes 327 Recipes
-          h4.section-some-cuisines__recipe Pizza
-      .section-some-cuisines__image-wrapper
-        img(src="../images/cuisines/10.jpg", alt="American")
-        .section-some-cuisines__recipe-subscribe
-          p.section-some-cuisines__some-recipes 1.437 Recipes
-          h4.section-some-cuisines__recipe American
+  section.section-some-cuisines#some-cuisines
+    .section-some-cuisines__cuisunes-wrapper
+      .section-some-cuisines__first-cuisines
+        .section-some-cuisines__image-wrapper
+          img(src="../images/cuisines/1.jpg", alt="Italian")
+          .section-some-cuisines__recipe-subscribe
+            p.section-some-cuisines__some-recipes 327 Recipes
+            h4.section-some-cuisines__recipe Italian
+        .section-some-cuisines__image-wrapper
+          img(src="../images/cuisines/2.jpg", alt="Indian")
+          .section-some-cuisines__recipe-subscribe
+            p.section-some-cuisines__some-recipes 856 Recipes
+            h4.section-some-cuisines__recipe Indian
+        .section-some-cuisines__image-wrapper
+          img(src="../images/cuisines/3.jpg", alt="French")
+          .section-some-cuisines__recipe-subscribe
+            p.section-some-cuisines__some-recipes 27 Recipes
+            h4.section-some-cuisines__recipe French"
+        .section-some-cuisines__image-wrapper
+          img(src="../images/cuisines/4.jpg", alt="Steakhouse")
+          .section-some-cuisines__recipe-subscribe
+            p.section-some-cuisines__some-recipes 174 Recipes
+            h4.section-some-cuisines__recipe Steakhouse
+        .section-some-cuisines__image-wrapper
+          img(src="../images/cuisines/5.jpg", alt="seafood")
+          .section-some-cuisines__recipe-subscribe
+            p.section-some-cuisines__some-recipes 131 Recipes
+            h4.section-some-cuisines__recipe seafood
+      .section-some-cuisines__second-cuisines
+        .section-some-cuisines__image-wrapper
+          img(src="../images/cuisines/6.jpg", alt="Sushi")
+          .section-some-cuisines__recipe-subscribe
+            p.section-some-cuisines__some-recipes 237 Recipes
+            h4.section-some-cuisines__recipe Sushi
+        .section-some-cuisines__image-wrapper
+          img(src="../images/cuisines/7.jpg", alt="Mexican")
+          .section-some-cuisines__recipe-subscribe
+            p.section-some-cuisines__some-recipes 529 Recipes
+            h4.section-some-cuisines__recipe Mexican
+        .section-some-cuisines__image-wrapper
+          img(src="../images/cuisines/8.jpg", alt="Chinese")
+          .section-some-cuisines__recipe-subscribe
+            p.section-some-cuisines__some-recipes 145 Recipes
+            h4.section-some-cuisines__recipe Chinese
+        .section-some-cuisines__image-wrapper
+          img(src="../images/cuisines/9.jpg", alt="Pizza")
+          .section-some-cuisines__recipe-subscribe
+            p.section-some-cuisines__some-recipes 327 Recipes
+            h4.section-some-cuisines__recipe Pizza
+        .section-some-cuisines__image-wrapper
+          img(src="../images/cuisines/10.jpg", alt="American")
+          .section-some-cuisines__recipe-subscribe
+            p.section-some-cuisines__some-recipes 1.437 Recipes
+            h4.section-some-cuisines__recipe American
 
     .section-some-cuisines__numbers.numbers
       .numbers__number-wrap

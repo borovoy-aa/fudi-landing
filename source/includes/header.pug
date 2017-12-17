@@ -1,13 +1,27 @@
-header.header
-	.header__head
+header.header#home
+	.header__head.header-opacity
 		.header__logotype
 			img(src="../images/header-logo.png", alt="Logotype")
 		.header__login-items.login-items
 			a.login-items__link(href="#") log in
 			a.login-items__link(href="#") sign up
-			a.login-items__menu(href='#')
-				span
+
+			.menu-collapsed
+				.bar
+				nav
+					ul
+						li
+							a.close-nav(href='#home') Home
+						li
+							a.close-nav(href='#fudi-app') App
+						li
+							a.close-nav(href='#reviews') Reviews
+						li
+							a.close-nav(href='#some-cuisines') Cuisines
+
 	.header-content
+		.header-content__responsive-logo
+			img(src="../images/header-resp-logo.png", alt="")
 		h2.header-content__first-subtitle Find your Favorite
 		h1.header-content__second-subtitle RECIPES
 		a(href="#content").button.button--opacity get started
